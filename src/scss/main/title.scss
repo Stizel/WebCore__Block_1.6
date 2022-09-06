@@ -1,0 +1,49 @@
+.title__text {
+  color: #1b1c21;
+  font-family: TTLakes-Bold, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+}
+.title__text::before {
+  content: url("../../img/icons/highlight.svg");
+  position: absolute;
+  left: 0;
+}
+
+.title__menu {
+  display: none;
+}
+@media (min-width: 1120px) {
+  .title__menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 1120px) {
+  .page__title {
+    margin-top: 42px;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1120px) {
+  .title__button {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+  }
+  .title__button-text {
+    font-family: TTLakes-Regular, sans-serif;
+    color: #1b1c21;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .title__button-image {
+    margin-left: 8px;
+  }
+}

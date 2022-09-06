@@ -1,0 +1,51 @@
+.about {
+  font-family: TTLakes-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.about__text {
+  margin: 24px 0px 15px 0px;
+  max-height: 90px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .about__text {
+    min-width: 305px;
+    max-height: 160px;
+    margin-right: 48px;
+  }
+}
+.about__text--open {
+  max-height: fit-content;
+}
+
+.about__img {
+  width: 100vw;
+  margin: 0 -16px;
+  margin-top: 15px;
+  min-width: 320px;
+}
+@media (min-width: 768px) {
+  .about__img {
+    min-width: 360px;
+    max-width: 360px;
+    height: max-content;
+    margin-top: 24px;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1120px) {
+  .about__img {
+    min-width: 531px;
+    margin-top: 24px;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
