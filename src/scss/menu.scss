@@ -1,0 +1,51 @@
+@import "vars.scss";
+
+
+.menu {
+  min-height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+  @media (min-width: 1366px) {
+    min-height: 75px;
+    margin: 0 34px !important;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-width: 1045px;
+  }
+}
+
+.menu__item {
+  &:first-child{
+    margin-left: 16px;
+    @media (min-width: 768px) {
+      margin-left: 24px;
+    }
+    @media (min-width: 1336px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.menu__link {
+  color: $color_2;
+  font-family: $LakesMedium;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  padding: 8px 16px;
+  border: none;
+  &--active {
+    border: 2px solid $blcolor;
+    background-color: $bgColor_2;
+    border-radius: 5px;
+    padding: 6px 14px;
+  }
+  &:hover {
+    border: 2px solid $blcolor;
+    background-color: $bgColor_2;
+    border-radius: 5px;
+    padding: 6px 14px;
+  }
+}

@@ -1,0 +1,75 @@
+@import "vars.scss";
+
+.page__header {
+  background-color: $bgColor_2;
+  min-height: 88px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $bordercolor_2;
+  padding: 24px 16px;
+  @media (min-width: 768px) {
+    padding: 24px;
+  }
+  @media (min-width: 1366px) {
+    display: none;
+  }
+}
+.header__left-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &::after{
+    content: url("../img/divider.svg");
+    margin: 0 20px;
+    display: block;
+    @media (min-width: 768px) {
+
+        transform: translateX(-140px);
+      }
+  }
+}
+
+.header__menu-button {
+  margin-right: 16px;
+  @media (min-width: 768px) {
+      margin-right: 42px;
+  }
+}
+
+.header__right-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @media (min-width: 768px) {
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.contact-us {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+.contacts-us__chat {
+  margin: 0 16px;
+}
+
+.check-status-button {
+  margin-left: 16px;
+}
+
+.repair {
+  display: flex;
+  &::before {
+    @media (min-width: 768px) {
+    content: url("../img/divider.svg");
+    margin: 0 20px;
+    transform: translateY(4px);
+    }
+  }
+}
+.repair__check-status {
+  margin-left: 16px;
+}

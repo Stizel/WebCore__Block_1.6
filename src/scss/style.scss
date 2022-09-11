@@ -1,12 +1,75 @@
-@import url("normalize.scss");
-@import url("fonts.scss");
-@import url("expand.scss");
-@import url("main/header.scss");
-@import url("main/title.scss");
-@import url("main/navigation.scss");
-@import url("main/about.scss");
-@import url("side-menu/side-menu.scss");
-@import url("side-menu/sm-header.scss");
-@import url("side-menu/sm-main.scss");
-@import url("side-menu/sm-footer.scss");
-@import url("gallery/gallery.scss");
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/pagination/pagination.scss";
+@import "vars.scss";
+
+@import "modal.scss";
+
+@import "side-menu.scss";
+
+@import "nullstyle.scss";
+
+@import "expand.scss";
+
+@import "header.scss";
+@import "title.scss";
+@import "menu.scss";
+@import "about.scss";
+@import "gallery.scss";
+@import "brands.scss";
+@import "tech-type.scss";
+@import "price.scss";
+@import "commercial.scss";
+@import "footer.scss";
+
+body {
+  background-color: $bgColor_1;
+}
+.page-wrapper {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  @media (min-width: 1366px) {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+  }
+}
+.content {
+  max-width: calc(100-320px);
+}
+.blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  &--true {
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+}
+.click {
+  cursor: pointer;
+}
+
+.ul-def {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(0 0 10px rgb(62, 32, 151));
+  }
+}
+
+.link{
+  text-decoration: none;
+  color: $color_1;
+}

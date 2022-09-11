@@ -1,0 +1,57 @@
+@import "vars.scss";
+
+.page__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 16px;
+  @media (min-width: 768px) {
+    margin: 24px;
+    margin-bottom: 32px;
+  }
+  @media (min-width: 1366px) {
+    max-width: 1045px;
+    margin: 42px 32px 10px 35px;
+  }
+}
+
+.title__menu {
+  display: none;
+  @media (min-width: 1366px) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.title__text {
+  color: $color_1;
+  font-family: $LakesBold;
+  font-size: 28px;
+  line-height: 40px;
+  &:before {
+    content: url("../img/highlight.svg");
+    position: absolute;
+    left: 0;
+    @media (min-width: 1366px) {
+      content: url("../img/highlight-desktop.svg");
+      position: relative;
+      top: 8px;
+      left: -33px;
+    }
+  }
+}
+.title__button {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+.title__button-text {
+  font-family: $LakesRegular;
+    color: #1b1c21;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.title__button-image {
+  margin-left: 8px;
+}

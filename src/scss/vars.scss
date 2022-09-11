@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url(../fonts/TTLakes-Regular.woff2);
+}
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url(../fonts/TTLakes-Medium.woff2);
+}
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url(../fonts/TTLakes-Bold.woff2);
+}
+$LakesRegular: "TTLakes-Regular", sans-serif;
+$LakesMedium: "TTLakes-Medium", sans-serif;
+$LakesBold: "TTLakes-Bold", sans-serif;
+
+$bgColor_1: #f8f8f8;
+$bgColor_2: #fff;
+$bgColor_3: #ddd;
+$bgColor_4: #b5b6bc;
+
+$color_1: #1b1c21;
+$color_2: #7e7e82;
+$color_3: #ff3e79;
+$bordercolor_1: #eaeaea;
+$bordercolor_2: #d9fff5;
+$blcolor: #b8ffec;
+$gradcolor: #ffff00;

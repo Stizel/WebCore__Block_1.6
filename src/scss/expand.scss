@@ -1,19 +1,19 @@
 .expand {
     font-family: TTLakes-Regular, sans-serif;
     color: #1b1c21;
-    text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    &::before {
+        content: url("../img/icons/show.svg");
+        margin-right: 16px;
+        margin-left: 8px;
+    }
+    &--close{
+        &::before {
+            content: url("../img/icons/hide.svg");
+    }
   }
-  .expand::before {
-    content: url("../img/icons/show.svg");
-    margin-right: 16px;
-    margin-left: 8px;
-    transform: translate(-1px, 1px);
-  }
+}
   
-  .expand--close::before {
-    content: url("../img/icons/hide.svg");
-  }
-  
+ 
