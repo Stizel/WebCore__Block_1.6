@@ -1,36 +1,32 @@
-import Swiper, { Pagination } from 'swiper';
+import Swiper, { Pagination } from 'swiper'
 
 Swiper.use(Pagination)
 
-let swiper;
-let init = false;
+let swiper
+let init = false
 
 let swiperMode = () => {
-   let mobile = window.matchMedia('(max-width: 767px)');
+  let mobile = window.matchMedia('(max-width: 767px)')
 
-    if(mobile.matches && !init) {
-             init = true;
-             swiper = new Swiper('.swiper', {
-                slidesPerView: "auto",
-                spaceBetween: 16,
-                loop: false,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable:true,
-                  },
-             });  
-    }
+  if (mobile.matches && !init) {
+    init = true
+    swiper = new Swiper('.swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      loop: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      }
+    })
+  }
   if (!mobile.matches && init) {
-    if (swiper.destroy && typeof swiper.destroy === 'function') {
-      swiper.forEach((el) => el.destroy())
-      init = false;
-    }    
+    swiper.forEach((el) => el.destroy())
+    init = false
   }
 }
 
-let arr = ["load", "resize"];
-arr.forEach(el => window.addEventListener(el,()=>swiperMode()));  
+let arr = ['load', 'resize']
+arr.forEach((el) => window.addEventListener(el, () => swiperMode()))
 
 swiperMode()
-
-
