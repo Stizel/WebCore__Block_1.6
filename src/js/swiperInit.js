@@ -22,7 +22,7 @@ let swiperMode = () => {
     }
   if (!mobile.matches && init) {
     if (swiper.destroy && typeof swiper.destroy === 'function') {
-      swiper.destroy(true, true)
+      swiper.forEach((el) => el.destroy())
       init = false;
     }    
   }
