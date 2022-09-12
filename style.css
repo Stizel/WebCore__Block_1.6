@@ -1233,23 +1233,25 @@ h6 {
   font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
-.price__container {
-  max-width: 1265px; }
-  .price__container::after {
-    content: '';
-    position: absolute;
-    bottom: 60px;
-    right: 0;
-    width: 24px;
-    height: 200px;
-    z-index: 2;
-    background-image: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
-    @media (min-width: 768px) {
-      .price__container::after {
-        display: none; } }
-    @media (min-width: 1366px) {
-      .price__container::after {
-        margin-right: 32px; } }
+@media (min-width: 768px) {
+  .price__container {
+    max-width: 1265px; } }
+
+.price__container::after {
+  content: '';
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  width: 24px;
+  height: 200px;
+  z-index: 2;
+  background-image: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
+  @media (min-width: 768px) {
+    .price__container::after {
+      display: none; } }
+  @media (min-width: 1366px) {
+    .price__container::after {
+      margin-right: 32px; } }
 
 .price__wrapper {
   min-height: 250px;
