@@ -306,27 +306,27 @@
   display: none; }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .modal-wrapper {
@@ -460,15 +460,15 @@
       margin-right: 32px; } }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .side-menu-wrapper {
@@ -706,15 +706,15 @@ h6 {
     content: url(./static/hide.svg); }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .page__header {
@@ -782,15 +782,15 @@ h6 {
   margin-left: 16px; }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .page__title {
@@ -847,15 +847,15 @@ h6 {
   margin-left: 8px; }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .menu {
@@ -901,15 +901,15 @@ h6 {
     padding: 6px 14px; }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 @media (min-width: 768px) {
@@ -975,15 +975,15 @@ h6 {
       margin-left: 24px; } }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .page__gallery {
@@ -1070,15 +1070,15 @@ h6 {
       margin-left: 32px; } }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .brands__container::after {
@@ -1155,15 +1155,15 @@ h6 {
   height: 100%; }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .tech-type__container::after {
@@ -1222,15 +1222,15 @@ h6 {
   height: 100%; }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .price__container {
@@ -1335,15 +1335,15 @@ h6 {
       justify-self: flex-end; } }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .commercial {
@@ -1385,15 +1385,15 @@ h6 {
     position: absolute; }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   src: url(./fonts/TTLakes-Regular.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   src: url(./fonts/TTLakes-Medium.woff2); }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   src: url(./fonts/TTLakes-Bold.woff2); }
 
 .footer {
