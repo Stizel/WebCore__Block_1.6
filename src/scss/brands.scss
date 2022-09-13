@@ -1,5 +1,5 @@
-@import "vars.scss";
-.brands__container{
+@import 'vars.scss';
+.brands__container {
   &::after {
     content: '';
     position: absolute;
@@ -9,16 +9,16 @@
     height: 81px;
     z-index: 2;
     background-image: linear-gradient(
-    270deg,
-    #f8f8f8 16.84%,
-    rgba(248, 248, 248, 0.0001) 100%
-  );
-  @media (min-width: 768px) {
-    display: none;
-  }
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
-.brands__wrapper{
+.brands__wrapper {
   min-height: 120px;
   max-height: 150px;
   &--open {
@@ -34,46 +34,59 @@
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: 16px, 184px;
+  &::after {
+    content: url('../img/icons/pink-arrow.svg');
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    z-index: 1;
+    width: 42px;
+    height: 43px;
+    border: 2px solid $btnFucsia;
+    border-radius: 50%;
+  }
   @media (min-width: 768px) {
-    width: 224px;
+    min-width: 224px;
+    width: auto;
     background-position: 16px, 168px;
   }
   @media (min-width: 1366px) {
-    width: 240px;
+    min-width: 240px;
+    width: auto;
     background-position: 16px, 184px;
   }
   &--active,
-  &:hover  {
+  &:hover {
     border: 2px solid $blcolor;
     border-radius: 5px;
   }
 }
 .brands__element:nth-child(1) {
-  background-image: url("../img/brands/lenovo.png"),url("../img/icons/go.svg");
+  background-image: url('../img/brands/lenovo.png');
 }
 .brands__element:nth-child(2) {
-  background-image: url("../img/brands/samsung.png"),url("../img/icons/go.svg");
+  background-image: url('../img/brands/samsung.png');
 }
 .brands__element:nth-child(3) {
-  background-image: url("../img/brands/apple.png"), url("../img/icons/go.svg");
+  background-image: url('../img/brands/apple.png');
 }
 .brands__element:nth-child(4) {
-  background-image: url("../img/brands/veiwsonic.png"),url("../img/icons/go.svg");
+  background-image: url('../img/brands/veiwsonic.png');
 }
 .brands__element:nth-child(5) {
-  background-image: url("../img/brands/bosh.png"),url("../img/icons/go.svg");
+  background-image: url('../img/brands/bosh.png');
 }
 .brands__element:nth-child(6) {
-  background-image: url("../img/brands/hp.png"),url("../img/icons/go.svg");
+  background-image: url('../img/brands/hp.png');
 }
 .brands__element:nth-child(7) {
-  background-image: url("../img/brands/acer.png"),url("../img/icons/go.svg");
+  background-image: url('../img/brands/acer.png');
 }
 .brands__element:nth-child(8) {
-  background-image: url("../img/brands/sony.png"),url("../img/icons/go.svg");
+  background-image: url('../img/brands/sony.png');
 }
 .brands__element:nth-child(9) {
-  background-image: url("../img/brands/lenovo.png"),url("../img/icons/go.svg");
+  background-image: url('../img/brands/lenovo.png');
 }
 
 .brands__link {

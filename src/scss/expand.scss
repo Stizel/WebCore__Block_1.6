@@ -1,19 +1,17 @@
 .expand {
-    font-family: TTLakes-Regular, sans-serif;
-    color: #1b1c21;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: TTLakes-Regular, sans-serif;
+  color: #1b1c21;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  &::before {
+    content: url('../img/icons/show.svg');
+    margin-right: 16px;
+    margin-left: 8px;
+  }
+  &--close {
     &::before {
-        content: url("../img/icons/show.svg");
-        margin-right: 16px;
-        margin-left: 8px;
-    }
-    &--close{
-        &::before {
-            content: url("../img/icons/hide.svg");
+      content: url('../img/icons/hide.svg');
     }
   }
 }
-  
- 

@@ -9,17 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ремонт техники</title>
   </head>
-  <body>
+  <body class="body">
     <div class="page-wrapper">
       <aside class="modal-wrapper modal-wrapper--hidden">
         <div class="modal-overlay modal-overlay--hidden"></div>
         <div class="modal">
           <button
             tabindex="6"
-            class="modal__button-close modal__button-close--hidden button click"
+            class="modal__button-close pink-round-btn button click"
             type="button"
           >
-            <img src="./img/btn-burger-open.svg" alt="Меню" />
           </button>
 
           <div class="modal-call modal-call--hidden">
@@ -32,6 +31,7 @@
                 name="usertel"
                 value=""
                 placeholder="Телефон"
+                id="call"
               />
             </form>
 
@@ -45,8 +45,7 @@
               tabindex="2"
               class="modal__submit-button modal-feedback__submit button click"
               type="button"
-            >
-              <img src="./img/submit.png" alt="Меню" />
+              >ОТПРАВИТЬ&ensp;&ensp;
             </button>
           </div>
 
@@ -55,12 +54,12 @@
 
             <form class="modal__form" action="#" method="post">
               <input
-                tabindex="1"
                 class="modal__input"
                 type="text"
                 name="username"
                 value=""
                 placeholder="Имя"
+                id="name"
               />
               <input
                 tabindex="2"
@@ -99,8 +98,7 @@
               tabindex="5"
               class="modal__submit-button modal-feedback__submit button click"
               type="button"
-            >
-              <img src="./img/submit.png" alt="Меню" />
+              >ОТПРАВИТЬ&ensp;&ensp;
             </button>
           </div>
         </div>
@@ -110,14 +108,14 @@
         <div class="side-menu-overlay side-menu-overlay--hidden"></div>
         <div class="side-menu">
           <header class="side-menu__header">
-            <button class="button side-menu__button-close click">
-              <img src="./img/btn-burger-open.svg" alt="Меню" />
+            <button class="button side-menu__button-close pink-round-btn click">
             </button>
 
             <img class="side-menu__logo" src="./img/logo.svg" alt="Логотип" />
             <div class="side-menu__space"></div>
-            <button class="button side-menu__button-search click">
-              <img src="./img/search.svg" alt="Поиск" />
+            <button
+              class="button side-menu__button-search pink-round-btn click"
+            >
             </button>
           </header>
 
@@ -153,18 +151,24 @@
           <footer class="side-menu__footer">
             <ul class="side-menu__contact-us ul-def">
               <li>
-                <button class="button contacts-us__call" type="button">
-                  <img src="img/call.svg" alt="Позвонить" />
+                <button
+                  class="button contacts-us__call pink-round-btn click"
+                  type="button"
+                >
                 </button>
               </li>
               <li>
-                <button class="button contacts-us__chat" type="button">
-                  <img src="img/chat.svg" alt="Открыть чат" />
+                <button
+                  class="button contacts-us__chat pink-round-btn click"
+                  type="button"
+                >
                 </button>
               </li>
               <li>
-                <button class="button contacts-us__profile" type="button">
-                  <img src="img/profile.svg" alt="Открыть профиль" />
+                <button
+                  class="button contacts-us__profile pink-round-btn click"
+                  type="button"
+                >
                 </button>
               </li>
             </ul>
@@ -203,8 +207,10 @@
       <div class="content">
         <header class="header page__header">
           <div class="header__left-side">
-            <button class="button header__menu-button" type="button">
-              <img src="img/btn-burger.svg" alt="Меню" />
+            <button
+              class="button header__menu-button pink-round-btn click"
+              type="button"
+            >
             </button>
 
             <div class="logo">
@@ -215,36 +221,40 @@
           <div class="header__right-side">
             <ul class="contact-us ul-def">
               <li>
-                <button class="button contacts-us__call" type="button">
-                  <img src="./img/call.svg" alt="Позвонить" />
+                <button
+                  class="button contacts-us__call pink-round-btn click"
+                  type="button"
+                >
                 </button>
               </li>
               <li>
-                <button class="button contacts-us__chat" type="button">
-                  <img src="./img/chat.svg" alt="Открыть чат" />
+                <button
+                  class="button contacts-us__chat pink-round-btn click"
+                  type="button"
+                >
                 </button>
               </li>
               <li>
-                <button class="button contacts-us__profile" type="button">
-                  <img src="./img/profile.svg" alt="Открыть профиль" />
+                <button
+                  class="button contacts-us__profile pink-round-btn click"
+                  type="button"
+                >
                 </button>
               </li>
             </ul>
             <ul class="repair ul-def">
               <li>
-                <button class="button repair__request" type="button">
-                  <img
-                    src="./img/btn-repair.svg"
-                    alt="Оставить заявку на ремонт"
-                  />
+                <button
+                  class="button repair__request pink-round-btn click"
+                  type="button"
+                >
                 </button>
               </li>
               <li>
-                <button class="button repair__check-status" type="button">
-                  <img
-                    src="./img/btn-checkStatus.svg"
-                    alt="Узнать статус ремонта"
-                  />
+                <button
+                  class="button repair__check-status pink-round-btn click"
+                  type="button"
+                >
                 </button>
               </li>
             </ul>
@@ -257,23 +267,17 @@
 
             <ul class="title__menu ul-def">
               <li>
-                <button class="title__button button" type="button">
-                  <span class="title__button-text">Оставить заявку</span>
-                  <img
-                    class="title__button-image"
-                    src="img/btn-repair.svg"
-                    alt="Оставить заявку на ремонт"
-                  />
+                <button
+                  class="title__button title__button-check-status button"
+                  type="button"
+                  >Оставить заявку
                 </button>
               </li>
               <li>
-                <button class="title__button button" type="button">
-                  <span class="title__button-text">Статус ремонта</span>
-                  <img
-                    class="title__button-image"
-                    src="img/btn-checkStatus.svg"
-                    alt="Оставить заявку на ремонт"
-                  />
+                <button
+                  class="title__button title__button-repair button"
+                  type="button"
+                  >Cтатус ремонта
                 </button>
               </li>
             </ul>
@@ -452,7 +456,9 @@
                   <div class="price-card__head">Срок</div>
                   <div class="price-card__description">30 мин</div>
                   <div class="price-card__description">
-                    <button class="price__button button"></button>
+                    <button class="price__button button"
+                      >ЗАКАЗАТЬ &ensp; &ensp;
+                    </button>
                   </div>
                 </li>
                 <li class="swiper-slide price__element">
@@ -465,7 +471,9 @@
                   <div class="price-card__head">Срок</div>
                   <div class="price-card__description">30-120 мин</div>
                   <div class="price-card__description">
-                    <button class="price__button button"></button>
+                    <button class="price__button button"
+                      >ЗАКАЗАТЬ &ensp; &ensp;</button
+                    >
                   </div>
                 </li>
                 <li class="swiper-slide price__element">
@@ -480,7 +488,9 @@
                   <div class="price-card__head">Срок</div>
                   <div class="price-card__description">30-120 мин</div>
                   <div class="price-card__description">
-                    <button class="price__button button"></button>
+                    <button class="price__button button"
+                      >ЗАКАЗАТЬ &ensp; &ensp;</button
+                    >
                   </div>
                 </li>
                 <li class="swiper-slide price__element">
@@ -495,7 +505,9 @@
                   <div class="price-card__head">Срок</div>
                   <div class="price-card__description">30-120 мин</div>
                   <div class="price-card__description">
-                    <button class="price__button button"></button>
+                    <button class="price__button button"
+                      >ЗАКАЗАТЬ &ensp; &ensp;</button
+                    >
                   </div>
                 </li>
                 <li class="swiper-slide price__element price__element--bottom">
@@ -510,7 +522,9 @@
                   <div class="price-card__head">Срок</div>
                   <div class="price-card__description">30-120 мин</div>
                   <div class="price-card__description">
-                    <button class="price__button button"></button>
+                    <button class="price__button button"
+                      >ЗАКАЗАТЬ &ensp; &ensp;</button
+                    >
                   </div>
                 </li>
               </ul>

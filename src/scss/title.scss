@@ -1,6 +1,6 @@
-@import "vars.scss";
+@import 'vars.scss';
 
-.page__title{
+.page__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,15 +28,16 @@
   font-family: $LakesBold;
   font-size: 28px;
   line-height: 40px;
-  &:before {
-    content: url("../img/highlight.svg");
+  &::before {
+    content: '';
+    width: 4px;
+    height: 40px;
+    background-color: $lightGreen;
     position: absolute;
     left: 0;
     @media (min-width: 1366px) {
-      content: url("../img/highlight-desktop.svg");
-      position: relative;
-      top: 8px;
-      left: -33px;
+      width: 3px;
+      left: 322px;
     }
   }
 }
@@ -44,14 +45,27 @@
   display: flex;
   align-items: center;
   margin-left: 24px;
-}
-.title__button-text {
   font-family: $LakesRegular;
-    color: #1b1c21;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 600;
+  color: #1b1c21;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  &::after {
+    margin-left: 8px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $btnFucsia;
+  }
 }
-.title__button-image {
-  margin-left: 8px;
+.title__button-check-status {
+  &::after {
+    background-image: url('../img/btn-checkStatus.svg');
+  }
+}
+.title__button-repair {
+  &::after {
+    background-image: url('../img/btn-repair.svg');
+  }
 }

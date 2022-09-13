@@ -1,4 +1,4 @@
-@import "vars.scss";
+@import 'vars.scss';
 
 .main {
   @media (min-width: 768px) {
@@ -58,7 +58,7 @@
   }
 }
 
-.about__read-more{
+.about__read-more {
   margin-bottom: 16px;
   margin-left: 16px;
   @media (min-width: 768px) {
@@ -66,4 +66,3 @@
     margin-left: 24px;
   }
 }
-

@@ -1,4 +1,4 @@
-@import "vars.scss";
+@import 'vars.scss';
 
 .page__header {
   background-color: $bgColor_2;
@@ -18,21 +18,24 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  &::after{
-    content: url("../img/divider.svg");
+  &::after {
+    content: '';
+    width: 2px;
+    height: 32px;
+    background-color: $gray;
     margin: 0 20px;
     display: block;
     @media (min-width: 768px) {
-
-        transform: translateX(-140px);
-      }
+      transform: translateX(-140px);
+    }
   }
 }
 
 .header__menu-button {
+  background-image: url('../img/btn-burger.svg');
   margin-right: 16px;
   @media (min-width: 768px) {
-      margin-right: 42px;
+    margin-right: 42px;
   }
 }
 
@@ -52,21 +55,33 @@
     display: flex;
   }
 }
+.contacts-us__call {
+  background-image: url('../img/call.svg');
+}
 .contacts-us__chat {
+  background-image: url('../img/chat.svg');
   margin: 0 16px;
 }
-
-.check-status-button {
-  margin-left: 16px;
+.contacts-us__profile {
+  background-image: url('../img/profile.svg');
 }
 
+.repair__check-status {
+  background-image: url('../img/btn-checkStatus.svg');
+}
+.repair__request {
+  background-image: url('../img/btn-repair.svg');
+}
 .repair {
   display: flex;
   &::before {
     @media (min-width: 768px) {
-    content: url("../img/divider.svg");
-    margin: 0 20px;
-    transform: translateY(4px);
+      content: '';
+      width: 2px;
+      height: 32px;
+      background-color: $gray;
+      margin: 0 20px;
+      transform: translateY(4px);
     }
   }
 }

@@ -1,0 +1,65 @@
+body {
+  background-color: $bgColor_1;
+}
+.body-overflow {
+  overflow: hidden;
+}
+.page-wrapper {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  @media (min-width: 1366px) {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+  }
+}
+.content {
+  max-width: calc(100-320px);
+}
+.blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  &--true {
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+}
+.click {
+  cursor: pointer;
+}
+
+.ul-def {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(0 0 10px rgb(62, 32, 151));
+  }
+}
+.pink-round-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $btnFucsia;
+}
+
+.link {
+  text-decoration: none;
+  color: $color_1;
+}
+
+h1 {
+  margin: 0;
+}

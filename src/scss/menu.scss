@@ -1,5 +1,4 @@
-@import "vars.scss";
-
+@import 'vars.scss';
 
 .menu {
   min-height: 40px;
@@ -17,7 +16,7 @@
 }
 
 .menu__item {
-  &:first-child{
+  &:first-child {
     margin-left: 16px;
     @media (min-width: 768px) {
       margin-left: 24px;

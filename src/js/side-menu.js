@@ -1,98 +1,77 @@
-const sideMenu = document.querySelector(`.side-menu-wrapper`);
-const menuBlur= sideMenu.querySelector(`.side-menu-overlay`);
-const btnClose = sideMenu.querySelector(`.side-menu__button-close`);
-const btnOpen = document.querySelector(`.header__menu-button`);
-const areaBlur= document.querySelector(`.blur`);
+const sideMenu = document.querySelector(`.side-menu-wrapper`)
+const menuBlur = sideMenu.querySelector(`.side-menu-overlay`)
 
-const modal = document.querySelector(`.modal-wrapper`);
-const modalBlur = modal.querySelector(`.modal-overlay`);
+const areaBlur = document.querySelector(`.blur`)
+let body = document.querySelector('.body')
 
-const modalBtnClose = modal.querySelector(`.modal__button-close`);
-const modalCall = modal.querySelector(`.modal-call`);
-const modalFeedback = modal.querySelector(`.modal-feedback`);
+const modal = document.querySelector(`.modal-wrapper`)
+const modalBlur = modal.querySelector(`.modal-overlay`)
 
-const callBtnTab = document.querySelectorAll(`.contacts-us__call`);
-const messageBtnTab = document.querySelectorAll(`.contacts-us__chat`);
+const modalCall = modal.querySelector(`.modal-call`)
+const modalFeedback = modal.querySelector(`.modal-feedback`)
 
-/////////////////sideMenu open/////////////////////
+/////////////////sideMenu toggle/////////////////////
 
-const menuOpen = (evt) => {
-  evt.preventDefault();
-  sideMenu.classList.remove(`side-menu-wrapper--hidden`);
-  menuBlur.classList.remove(`side-menu-overlay--hidden`);
-  areaBlur.classList.add(`blur--true`);
-}
-
-/////////////////sideMenu close/////////////////////
-
-const menuClose = (evt) => {
-  evt.preventDefault();
-  sideMenu.classList.add(`side-menu-wrapper--hidden`);
-  menuBlur.classList.add(`side-menu-overlay--hidden`);
-  areaBlur.classList.remove(`blur--true`);
+export const menuToggle = (evt) => {
+  evt.preventDefault()
+  sideMenu.classList.toggle(`side-menu-wrapper--hidden`)
+  menuBlur.classList.toggle(`side-menu-overlay--hidden`)
+  areaBlur.classList.toggle(`blur--true`)
+  body.classList.toggle('body-overflow')
 }
 
 /////////////////click on Blur close/////////////////////
 
-const clickOnBlurClose = (evt) => {
-  evt.preventDefault();
-  sideMenu.classList.add(`side-menu-wrapper--hidden`);
-  menuBlur.classList.add(`side-menu-overlay--hidden`);
-  modalBlur.classList.add(`modal-overlay--hidden`);
-  modal.classList.add(`modal-wrapper--hidden`);
-  sideMenu.classList.remove(`side-menu-wrapper--blur`);
-  areaBlur.classList.remove(`blur--true`);
+export const closeAll = () => {
+  sideMenu.classList.add(`side-menu-wrapper--hidden`)
+  menuBlur.classList.add(`side-menu-overlay--hidden`)
+  areaBlur.classList.remove(`blur--true`)
+  modalBlur.classList.add(`modal-overlay--hidden`)
+  modal.classList.add(`modal-wrapper--hidden`)
+  sideMenu.classList.remove(`side-menu-wrapper--blur`)
+  body.classList.remove('body-overflow')
 }
 
 /////////////////modal open/////////////////////
 
 const modalOpen = () => {
-  modal.classList.remove(`modal-wrapper--none`);
-  modal.classList.remove(`modal-wrapper--hidden`);
-  sideMenu.classList.add(`side-menu-wrapper--blur`);
-  areaBlur.classList.add(`blur--true`);
-  modalBlur.classList.remove(`modal-overlay--hidden`);
+  modal.classList.remove(`modal-wrapper--none`)
+  modal.classList.remove(`modal-wrapper--hidden`)
+  sideMenu.classList.add(`side-menu-wrapper--blur`)
+  areaBlur.classList.add(`blur--true`)
+  modalBlur.classList.remove(`modal-overlay--hidden`)
+  body.classList.add('body-overflow')
+}
+
+export const modalClose = (evt) => {
+  evt.preventDefault()
+  sideMenu.classList.add(`side-menu-wrapper--hidden`)
+  menuBlur.classList.add(`side-menu-overlay--hidden`)
+  modal.classList.add(`modal-wrapper--hidden`)
+  sideMenu.classList.remove(`side-menu-wrapper--blur`)
+  modalBlur.classList.add(`modal-overlay--hidden`)
+  areaBlur.classList.remove(`blur--true`)
+  body.classList.remove('body-overflow')
 }
 
 /////////////////callModal open/////////////////////
 
-const modalCallOpen = (evt) => {
-  evt.preventDefault();
+export const modalCallOpen = (evt) => {
+  evt.preventDefault()
   modalOpen()
-  modalFeedback.classList.add(`modal-feedback--hidden`);
-  modalCall.classList.remove(`modal-call--hidden`);
+  modalFeedback.classList.add(`modal-feedback--hidden`)
+  modalCall.classList.remove(`modal-call--hidden`)
+  let modalInput = modal.querySelector('#call')
+  setTimeout(() => modalInput.focus(), 1000)
 }
 
 ///////////////feedbackModal open/////////////////////
 
-const modalFbOpen = (evt) => {
-  evt.preventDefault();
+export const modalFbOpen = (evt) => {
+  evt.preventDefault()
   modalOpen()
-  modalCall.classList.add(`modal-call--hidden`);
-  modalFeedback.classList.remove(`modal-feedback--hidden`);
+  modalCall.classList.add(`modal-call--hidden`)
+  modalFeedback.classList.remove(`modal-feedback--hidden`)
+  let modalInput = modal.querySelector('#name')
+  setTimeout(() => modalInput.focus(), 1000)
 }
-
-////////////////////modal close//////////////////////////
-
-const modalClose = (evt) => {
-  evt.preventDefault();
-  sideMenu.classList.add(`side-menu-wrapper--hidden`);
-  menuBlur.classList.add(`side-menu-overlay--hidden`);
-  modal.classList.add(`modal-wrapper--hidden`);
-  sideMenu.classList.remove(`side-menu-wrapper--blur`);
-  modalBlur.classList.add(`modal-overlay--hidden`);
-  areaBlur.classList.remove(`blur--true`);
-}
-
-
-btnOpen.addEventListener('click', menuOpen);
-
-btnClose.addEventListener('click', menuClose);
-
-areaBlur.addEventListener('click', clickOnBlurClose);
-
-callBtnTab.forEach(el => el.addEventListener('click', modalCallOpen));
-
-messageBtnTab.forEach(el => el.addEventListener('click', modalFbOpen));
-
-modalBtnClose.addEventListener('click', modalClose);

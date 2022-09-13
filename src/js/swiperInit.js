@@ -5,7 +5,7 @@ Swiper.use(Pagination)
 let swiper
 let init = false
 
-let swiperMode = () => {
+export const swiperMode = () => {
   let mobile = window.matchMedia('(max-width: 767px)')
 
   if (mobile.matches && !init) {

@@ -1,12 +1,12 @@
-@import "vars.scss";
+@import 'vars.scss';
 
 .modal-wrapper {
-  min-height: 100%;
-  position: absolute;
-  display: flex;
+  overflow-y: scroll;
+  height: 100%;
+  position: fixed;
   right: 0;
   z-index: 4;
-  
+
   @media (min-width: 768px) {
     transition: 1s;
     max-width: 320px;
@@ -16,9 +16,6 @@
   }
   &--hidden {
     transform: translateX(300%);
-  }
-  &--none {
-    display: none;
   }
 }
 
@@ -43,7 +40,6 @@
   justify-content: flex-start;
   background-color: $bgColor_2;
   @media (min-width: 1366px) {
-    position: relative;
     bottom: 70px;
   }
   &--hidden {
@@ -59,12 +55,11 @@
 }
 
 .modal__button-close {
+  background-image: url('../img/btn-close.svg');
+  width: 40px;
+  height: 40px;
   align-self: flex-start;
   margin: 24px 0 40px 16px;
-  @media (min-width: 1366px) {
-    position: relative;
-    right: 100px;
-  }
 }
 
 .modal__title {
@@ -78,13 +73,14 @@
     margin-left: 32px;
   }
   &:before {
-    content: url("../img/highlight.svg");
+    content: '';
+    background-color: $lightGreen;
+    width: 4px;
+    height: 40px;
     position: absolute;
     left: 0;
     @media (min-width: 1366px) {
-      content: url("../img/highlight-desktop.svg");
-      position: absolute;
-      left: 0;
+      width: 3px;
     }
   }
 }
@@ -101,7 +97,7 @@
   border: 1px solid $bordercolor_1;
   border-radius: 8px;
   @media (min-width: 768px) {
-    // margin: 0;
+    margin: 0;
     margin-top: 16px;
     align-self: center;
     width: 288px;
@@ -115,7 +111,7 @@
   resize: none;
 }
 
-.modal__form{
+.modal__form {
   margin-top: 16px;
   display: flex;
   flex-direction: column;
@@ -139,8 +135,22 @@
   align-self: flex-end;
   margin-right: 16px;
   margin-bottom: 75px;
+  color: $bgColor_2;
+  font-family: $LakesBold;
+  font-size: 12px;
+  line-height: 24px;
+  width: 119px;
+  height: 32px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-color: $btnFucsia;
+  background-repeat: no-repeat;
+  background-position: right 16px bottom 11px;
+  background-image: url('../img/icons/white-arrow.svg');
+
   @media (min-width: 1366px) {
     margin-right: 32px;
   }
 }
-
